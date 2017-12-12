@@ -1,17 +1,18 @@
-# baseball-injuries
+# There's No Crying in Baseball - Unless You Get an Injury
 This repository contains datasets and analyses of baseball gamelogs and Disabled List data.
 
+# Datasets
 The data was scraped from two sources:
 - Injury data for seasons 2000 - 2016 was obtained from ProSportsTransasctions.com, and was reduced to only those being relinquished to the list, and does not include those who are being acquired back from the DL. (http://www.prosportstransactions.com/baseball/index.htm).
 - Game log data for seasons 2000 - 2015 was obtained from RetroSheet.org. The information used here was obtained free of charge from and is copyrighted by Retrosheet.  Interested parties may contact Retrosheet at "www.retrosheet.org".
 
-Injury Data:
+## Injury Data:
 - Date - Date of placement on the Disabled List
 - Relinquished - Name of Player
 - DL_Length - Length of time spent on the Disabled List
 - Injury_type - The type of injury if known
 
-Game Log Data:
+## Game Log Data:
  * 'date' - Date of the game 
  * 'num_game' - Number of the game of the series between two teams (0,1,2)
  * 'day' - Day of the week
@@ -63,3 +64,10 @@ Game Log Data:
 * 'addl_info' - Miscellaneous information
 * 'table_acq_from' -Gamelog origination
 
+# EDA for Injuries
+* baseball-injury-predictions.ipynb
+
+# EDA for Game Logs
+* baseball-injury-prediction.ipynb
+
+# Model Pipeline & Evaluation
