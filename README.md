@@ -1,4 +1,4 @@
-# There's No Crying in Baseball - Unless You Get an Injury
+# There's No Crying in Baseball - But There is a Disabled List
 This repository contains datasets and analyses of baseball gamelogs and Disabled List data.
 
 # Datasets
