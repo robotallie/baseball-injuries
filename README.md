@@ -3,10 +3,12 @@ This repository contains datasets and analyses of baseball gamelogs and Disabled
 
 # Datasets
 The data was scraped from two sources:
-- Injury data for seasons 2000 - 2016 was obtained from ProSportsTransasctions.com, and was reduced to only those being relinquished to the list, and does not include those who are being acquired back from the DL. (http://www.prosportstransactions.com/baseball/index.htm).
-- Game log data for seasons 2000 - 2015 was obtained from RetroSheet.org. The information used here was obtained free of charge from and is copyrighted by Retrosheet.  Interested parties may contact Retrosheet at "www.retrosheet.org".
+- `injuries.csv` : Injury data for seasons 2000 - 2016 was obtained from ProSportsTransasctions.com, and was reduced to only those being relinquished to the list, and does not include those who are being acquired back from the DL. (http://www.prosportstransactions.com/baseball/index.htm).
+- `GL2000.TXT` - `GL2016.TXT` : Individual season game log data for seasons 2000 - 2016 was obtained from RetroSheet.org. The information used here was obtained free of charge from and is copyrighted by Retrosheet.  Interested parties may contact Retrosheet at "www.retrosheet.org".
+- `TeamCurrentNames.csv` : Data connecting former and current team 3-letter abbreviations, regions, cities and nicknames, used in the game log data, used to merge the injury data with the game log data.
+- `MLBPlayerIDs.csv`: Data containing the name and ids for all MLB players featured in the game logs, used to connect injured players to specific game logs where that player was in the starting lineup
 
-## Injury Data:
+## Injury Data: see `injury_data_scrape.ipynb` for the web-scraping from ProSportsTransactions.com
 - Date - Date of placement on the Disabled List
 - Relinquished - Name of Player
 - DL_Length - Length of time spent on the Disabled List
